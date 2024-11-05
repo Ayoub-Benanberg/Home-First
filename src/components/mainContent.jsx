@@ -129,24 +129,26 @@ export default function MainPage() {
                 <div className="text-center flex flex-col">
                     <span className="text-4xl sm:text-5xl md:text-6xl font-thin mb-1">CONNECT WITH US</span>
                     <div className="w-full flex justify-center mt-8">
-                        <span className="w-80 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis iure voluptatum quam reiciendis, voluptas molestiae quisquam maiores laudantium rem.</span>
+                        <span className="w-80 text-center font-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis iure voluptatum quam reiciendis, voluptas molestiae quisquam maiores laudantium rem.
+                        </span>
                     </div>
-                    <div className="w-full px-40 pt-20">
+                    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-40 pt-20">
                         <form action="" className="w-full flex flex-col">
-                            <div className="flex justify-between w-full gap-8">
-                                <input type="text" id="firstName" placeholder="First Name  *" className="bg-white w-1/2 p-2 px-4 border border-gray-200" />
-                                <input type="text" id="lastName" placeholder="Last Name  *" className="bg-white w-1/2 p-2 px-4 border border-gray-200" />
+                            <div className="flex flex-col md:flex-row justify-between w-full gap-4 md:gap-8">
+                                <input type="text" id="firstName" placeholder="First Name  *" className="bg-white flex-1 p-2 px-4 border border-gray-200" />
+                                <input type="text" id="lastName" placeholder="Last Name  *" className="bg-white flex-1 p-2 px-4 border border-gray-200" />
                             </div>
-                            <div className="flex justify-between w-full gap-8 mt-6">
-                                <input type="email" id="email" placeholder="Email  *" className="bg-white w-1/2 p-2 px-4 border border-gray-200" />
-                                <input type="number" id="phone" placeholder="Phone  *" className="bg-white w-1/2 p-2 px-4 border border-gray-200" />
+                            <div className="flex flex-col md:flex-row justify-between w-full gap-4 md:gap-8 mt-6">
+                                <input type="email" id="email" placeholder="Email  *" className="bg-white flex-1 p-2 px-4 border border-gray-200" />
+                                <input type="number" id="phone" placeholder="Phone  *" className="bg-white flex-1 p-2 px-4 border border-gray-200" />
                             </div>
-                            <div className="flex justify-between w-full gap-8 mt-6">
-                                <input type="text" id="address" placeholder="Address  *" className="bg-white w-1/2 p-2 px-4 border border-gray-200" />
-                                <input type="text" id="city" placeholder="City  *" className="bg-white w-1/2 p-2 px-4 border border-gray-200" />
+                            <div className="flex flex-col md:flex-row justify-between w-full gap-4 md:gap-8 mt-6">
+                                <input type="text" id="address" placeholder="Address  *" className="bg-white flex-1 p-2 px-4 border border-gray-200" />
+                                <input type="text" id="city" placeholder="City  *" className="bg-white flex-1 p-2 px-4 border border-gray-200" />
                             </div>
-                            <div className="w-full text-gray-400">
-                                <select id="rating" className="bg-white w-full p-2 px-4 border border-gray-200 mt-6">
+                            <div className="w-full text-gray-400 mt-6">
+                                <select id="rating" className="bg-white w-full p-2 px-4 border border-gray-200">
                                     <option value="default">Customer House Condition Rating 1-5  *</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -155,22 +157,21 @@ export default function MainPage() {
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div className="w-full text-gray-400">
-                                <textarea id="description" placeholder="Additional Notes" className="w-full h-32 bg-white p-2 px-4 border border-gray-200 mt-6"></textarea>
+                            <div className="w-full text-gray-400 mt-6">
+                                <textarea id="description" placeholder="Additional Notes" className="w-full h-32 bg-white p-2 px-4 border border-gray-200"></textarea>
                             </div>
                             <div className="w-full flex justify-center my-10">
-                                <button className="bg-yellow-200 w-64 p-2 rounded-lg" onClick={(e) => {
+                                <button className="bg-yellow-200 w-full sm:w-64 p-2 rounded-lg" onClick={(e) => {
                                     e.preventDefault();
                                 }}>
-                                    BEGIN YOUR TALORED EXPERIENCE
+                                    BEGIN YOUR TAILORED EXPERIENCE
                                 </button>
                             </div>
                         </form>
                     </div>
-
                 </div>
-
             </section>
+
 
         </div>
     )
